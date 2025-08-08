@@ -1,0 +1,28 @@
+{
+  "name": "codesandbox-clone",
+  "version": "0.1.0",
+  "description": "A full-featured CodeSandbox clone built with Next.js and the CodeSandbox SDK",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "template": "csb build ./sandbox-template --vm-tier Nano --vm-build-tier Micro --ports 5173 --alias sdk-example@latest"
+  },
+  "dependencies": {
+    "@codesandbox/sdk": "^2.0.6-rc.1",
+    "@octokit/rest": "^22.0.0",
+    "next": "15.4.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

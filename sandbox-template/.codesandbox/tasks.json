@@ -1,0 +1,16 @@
+{
+  "setupTasks": [
+    "curl -fsSL https://code-server.dev/install.sh | sh",
+    "cd app && npm install"
+  ],
+  "tasks": {
+    "dev-server": {
+      "name": "Dev Server",
+      "command": "cd app && npm run dev",
+      "preview": {
+        "port": 5173
+      },
+      "runAtStart": true
+    }
+  }
+}
